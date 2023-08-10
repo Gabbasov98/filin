@@ -1,0 +1,304 @@
+.m-container {
+  padding: 0 20px;
+  max-width: 1520px;
+  width: 100%;
+  margin: 0 auto; }
+
+.text64 {
+  font-size: 64px;
+  line-height: 122%;
+  font-weight: 900;
+  text-transform: uppercase; }
+
+.text18 {
+  font-size: 18px;
+  line-height: 120%; }
+
+.teachers {
+  padding: 286px 0 420px;
+  position: relative; }
+
+.teachers .gear1 {
+  top: 100px;
+  left: 0;
+  position: absolute; }
+
+.teachers .gear__hidden1 {
+  position: absolute;
+  right: 0;
+  bottom: 50px; }
+
+.info-block {
+  text-align: center; }
+
+.info-block .text18 {
+  margin-top: 20px; }
+
+.teachers .m-container {
+  position: relative;
+  z-index: 2; }
+
+.teachers__grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3 - 260px / 3));
+  gap: 40px 130px; }
+
+.teacher-card__img {
+  position: relative;
+  padding-bottom: 106%; }
+
+.teacher-card__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  display: block; }
+
+.teacher-card__content {
+  box-shadow: 5px 5px 44px 0px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  text-align: center; }
+
+.teacher-card__name {
+  min-height: 105px;
+  padding: 30px 10px 19px;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 122%; }
+
+.teacher-card__desc {
+  padding: 15px 26px;
+  background-color: #FFF7CE;
+  min-height: 96px; }
+
+.teacher-card__experience {
+  padding: 20px; }
+
+.teacher-card__desc,
+.teacher-card__experience {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.teachers__gear {
+  display: none; }
+
+.filter {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 100px; }
+
+.filter-item {
+  position: relative; }
+
+.filter__btn {
+  width: 581px;
+  max-width: 100%;
+  padding: 0 50px;
+  height: 100px;
+  border: none;
+  border-radius: 50px;
+  background: #FFF;
+  box-shadow: 5px 5px 50px 0px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  transition: all .3s;
+  outline: none; }
+
+.filter__btn:hover {
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.3); }
+
+.filter__btn-icon {
+  margin-right: 28px; }
+
+.filter__btn-title {
+  font-size: 27px;
+  font-weight: 700;
+  margin-right: 20px; }
+
+.filter__btn-arrow {
+  margin-left: auto; }
+
+.filter-dropdown {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
+  z-index: 10;
+  padding: 40px 110px;
+  transition: all .3s;
+  opacity: 0;
+  pointer-events: none; }
+
+.filter-dropdown__items {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 20px; }
+
+.filter-dropdown__item {
+  color: #000;
+  font-size: 20px;
+  line-height: 120%; }
+
+.filter-dropdown__item:hover {
+  color: blue; }
+
+.filter-item._active .filter-dropdown {
+  opacity: 1;
+  pointer-events: unset; }
+
+@media screen and (max-width: 1500px) {
+  .teachers__grid {
+    grid-template-columns: repeat(3, calc(100% / 3 - 80px / 3));
+    gap: 40px; }
+
+  .teachers .gear__hidden1 {
+    transform: unset; } }
+@media screen and (max-width: 1100px) {
+  .text64 {
+    font-size: 25px; }
+
+  .text18 {
+    font-size: 12px; }
+
+  .info-block .text18 {
+    margin-top: 5px;
+    font-size: 10px; }
+
+  .teachers {
+    padding: 156px 0; }
+
+  .teachers__grid {
+    margin-top: 20px;
+    grid-template-columns: repeat(3, calc(100% / 3 - 16px));
+    gap: 24px; }
+
+  .teachers .gear1 {
+    transform: rotate(30deg) scale(0.4); }
+
+  .teachers .gear__hidden1 {
+    transform: scale(0.4);
+    right: -140px;
+    bottom: -200px; }
+
+  .teacher-card__name {
+    min-height: 70px;
+    padding: 20px 10px 10px;
+    font-size: 16px; }
+
+  .teacher-card__desc {
+    padding: 10px;
+    min-height: 80px; }
+
+  .teacher-card__experience {
+    padding: 10px 10px 20px;
+    min-height: 60px; }
+
+  .filter {
+    margin-top: 20px; }
+
+  .filter__btn {
+    width: 269px;
+    padding: 0 20px;
+    height: 43px; }
+
+  .filter__btn-icon {
+    margin-right: 15px;
+    width: 25px;
+    height: auto; }
+
+  .filter__btn-title {
+    font-size: 16px;
+    margin-right: 10px; }
+
+  .filter__btn-arrow {
+    width: 24px;
+    height: auto; }
+
+  .filter-dropdown {
+    border-radius: 15px;
+    padding: 15px; }
+
+  .filter-dropdown__items {
+    gap: 10px; }
+
+  .filter-dropdown__item {
+    font-size: 14px; } }
+@media screen and (max-width: 650px) {
+  .teachers {
+    padding: 110px 0 30px; }
+
+  .text64 {
+    font-size: 16px; }
+
+  .text18 {
+    font-size: 9px; }
+
+  .info-block .text18 {
+    margin-top: 3px; }
+
+  .teachers__grid {
+    grid-template-columns: repeat(2, calc(50% - 5px));
+    gap: 10px; }
+
+  .teacher-card__name {
+    min-height: 50px;
+    padding-top: 15px;
+    font-size: 10px; }
+
+  .teacher-card__desc {
+    padding: 8px;
+    min-height: 58px; }
+
+  .teacher-card__experience {
+    padding-bottom: 15px;
+    min-height: 49px; }
+
+  .teachers .gear {
+    display: none; }
+
+  .teachers__gear {
+    display: block;
+    position: absolute; }
+
+  .teachers__gear1 {
+    left: 0;
+    top: 120px;
+    width: 100px; }
+
+  .teachers__gear2 {
+    right: 0;
+    bottom: -70px;
+    width: 120px; }
+
+  .filter__btn {
+    width: 80px;
+    padding: 0 15px;
+    height: 30px; }
+
+  .filter__btn-icon {
+    margin-right: 10px;
+    width: 18px; }
+
+  .filter__btn-title {
+    display: none; }
+
+  .filter__btn-arrow {
+    width: 15px; }
+
+  .filter-dropdown {
+    left: unset;
+    right: 0;
+    width: 180px; }
+
+  .filter-dropdown__item {
+    font-size: 10px; } }
+
+/*# sourceMappingURL=style.css.map */
